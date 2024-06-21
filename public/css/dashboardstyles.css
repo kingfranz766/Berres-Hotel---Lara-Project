@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.1s ease;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1,
+h2 {
+    color: #444;
+}
+h3 a,
+h3{
+    color: brown;
+}
+
+h3 a:hover{
+    color: chocolate;
+}
+
+#update-room-div{
+    display: flex;
+    justify-content: center;
+}
+
+#update-btn{
+    font-size: 1rem;
+}
+
+.btn {
+    background: brown;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover {
+    color: brown;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid brown;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+
+.title h2{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+table {
+    padding: 10px;
+}
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+.side-menu {
+    position: fixed;
+    background: brown;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainlogo{
+    margin-top: 100px;
+    width: 120px;
+    margin-left: -40px;
+}
+
+#sidemenu-icon{
+    width: 30px;
+}
+
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-menu ul{
+    margin-top: 130px;
+}
+
+.side-menu li a{
+    font-size: 24px;
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.active a ,
+.active a span{
+    background: white;
+    color: brown;
+}
+
+.side-menu ul li a span:hover{
+    color: black;
+}
+
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container .header form button{
+    font-size: 1rem;
+}
+
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+#header-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-title img{
+    margin-right: 5px;
+}
+
+.container .header .nav .user {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .header .nav .user img {
+    width: 40px;
+    height: 40px;
+}
+.container .header .nav .user .img-case {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container .header .nav .user .img-case span {
+    font-size: 2.3rem;
+}
+
+#acc-icon{
+    color: brown;
+    font-weight: 700;
+}
+
+.container .header .nav .user .img-case img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+.container .content .cards {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .content .cards .card {
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cards-icon{
+    width: 40px;
+}
+
+.container .content .content-2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .content .content-2 .recent-payments {
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+.container .content .content-2 .new-students {
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+#full-name{
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+#email{
+    font-size: 1rem;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.container .content .content-2 table th{
+    background-color: brown;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.container .content .content-2 table tr td{
+    font-size: 1.4rem;
+}
+.container .content .content-2 .new-students table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Users Table */
+.content .users-div{
+    margin-top: 140px;
+}
+
+/* Staff Form */
+.staff-btn{
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.add-staff{
+    background: white;
+    min-height: 50vh;
+    max-width: fit-content;
+    width: 100%;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.staff-form-container{
+    display: grid;
+    justify-content: center;
+}
+
+.staff-form-container form .staff-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 60px;
+    padding-bottom: 40px;
+}
+
+.staff-form-container form .staff-form label{
+    font-size: 1.5rem;
+}
+
+.staff-form-container form .staff-form input{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.staff-form:nth-child(1){
+    margin-top: 10px;
+}
+
+.staff-form .staff-btn{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+    .side-menu li {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .side-menu li span {
+        display: none;
+    }
+    .side-menu {
+        align-items: center;
+    }
+    .side-menu li img {
+        width: 40px;
+        height: 40px;
+    }
+    .side-menu li:hover {
+        background: #f05462;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+}
+@media screen and (max-width:536px) {
+    .brand-name h1 {
+        font-size: 16px;
+    }
+    .container .content .cards {
+        justify-content: center;
+    }
+    .side-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+    .container .content .content-2 .recent-payments table th:nth-child(2),
+    .container .content .content-2 .recent-payments table td:nth-child(2) {
+        display: none;
+    }
+}
